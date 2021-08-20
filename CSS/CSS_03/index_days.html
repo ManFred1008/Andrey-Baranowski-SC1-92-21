@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Days</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing:border-box;
+      }
+      .list_1 {
+         /* width: 200px; */
+         display: flex;
+         flex-direction: row;
+      }
+
+      .list_1 > div {
+         border: 2px solid red;
+         background-color: chartreuse;
+         border-radius: 10px;
+         color: darkblue;
+         font-size: 26px;
+         text-align: center;
+         position:relative;
+         cursor: pointer;
+         flex: 1 1 0;
+      }
+
+      .list_2 {
+         width: 150px;  
+         display: none;
+         cursor: pointer;       
+      }
+
+      .list_2 >div{
+         border-style: solid;
+         border-width: 2px;
+         border-color: red;
+         border-radius: 10px;
+         background-color: rgb(188, 110, 204);
+         color: rgb(30, 75, 18);
+         font-size: 26px;
+      }
+      .list_1>div:hover  .list_2 {
+         display: block; position: absolute; left:15%; top:100%; z-index: 1;
+      }
+      .list_1:hover .list_1 > div {
+         background-color: darkcyan;
+      }
+
+      @media all and (max-width:1200px) {
+
+         .list_1 {
+         width: 200px;
+         display: flex;
+         flex-direction: column;
+         }
+
+         .list_1 > div {
+         flex: 1 1 0;
+         }
+
+         .list_1>div:hover  .list_2 {
+            display: block; position: absolute; left:80%; top:50%; z-index: 1;
+         }
+         .list_1:hover .list_1 > div {
+            background-color: rgb(131, 139, 139);
+         }
+      }
+   </style>
+
+</head>
+
+<body>
+      <div class="list_1">
+         <div>
+            Понедельник 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>
+         <div> 
+            Вторник 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>   
+         <div> 
+            Среда 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>
+         <div> 
+            Четверг 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>
+         <div> 
+            Пятница 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>
+         <div> 
+            Суббота 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>
+         <div> 
+            Воскресенье 
+            <div class="list_2">
+               <div> Завтрак </div>
+               <div> Обед </div>
+               <div> Ужин </div>
+            </div>
+         </div>
+      </div>
+
+   
+</body>
+</html>
